@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube playlist player",
+  "description": "Play all youtube videos in a playlist from a youtube account",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_title": "Youtube playlist player",
+    "default_icon": "icon.png"
+  },
+  "host_permissions": ["https://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icon.png"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+}
