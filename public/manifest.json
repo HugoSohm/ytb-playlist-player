@@ -20,5 +20,8 @@
       "resources": ["icon.png"],
       "matches": ["https://www.youtube.com/*"]
     }
-  ]
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
 }
